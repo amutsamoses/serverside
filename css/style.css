@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+/* Presets base */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* REUSABLES */
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding: 0.5rem;
+  /* background-color: orange; */
+}
+.hero-cont {
+  min-height: 60vh;
+}
+.btn {
+  padding-block: 0.8rem;
+  padding-inline: 1.8rem;
+  background-color: orange;
+  border-radius: 100rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+svg {
+  display: inline-block;
+  height: 5rem;
+  width: 5rem;
+}
+
+/* HEADER SECTION */
+
+.header {
+  background-color: hsla(0, 0%, 0%, 0.817);
+}
+.logo {
+  display: block;
+  height: 5rem;
+  width: 5rem;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+}
+.navigation ul li {
+  margin-right: 2rem;
+}
+.navigation ul li a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: #fff;
+
+  transition: all 0.2s;
+}
+.navigation ul li a:hover {
+  color: orange;
+}
+
+/* HERO SECTION */
+.section-hero {
+  position: relative;
+  min-height: 60vh;
+  background-image: linear-gradient(
+      hsla(0, 0%, 0%, 0.663),
+      hsla(0, 0%, 0%, 0.672)
+    ),
+    url(../Assets/images/Agri\ 000.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 80rem;
+}
+.main-heading {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: hsla(0, 0%, 100%, 0.904);
+  margin-bottom: 1.2rem;
+}
+.hero-text {
+  color: hsla(0, 0%, 89%, 0.904);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  display: block;
+  margin-inline: auto;
+  width: 50%;
+}
+.btn-getstarted:link,
+.btn-getstarted:visited {
+  font-size: 1.2rem;
+  color: #000;
+}
+.btn-getstarted:hover,
+.btn-getstarted:active {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+  background-color: hsla(39, 100%, 50%, 0.878);
+
+  transition: all 0.2s ease;
+}
+
+/* 1rem = 10px */
+/* SECTION TOUR CATEGORIES */
+.section-categories {
+  padding-block: 4rem;
+  background-color: #fff;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.135);
+}
+.secondary-heading {
+  text-align: left;
+  font-size: 4;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.categories {
+  display: grid;
+  grid-gap: 2rem;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.category {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.img-cat {
+  display: block;
+  height: 12rem;
+}
+.img-cat img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.cat-details {
+  padding: 1.2rem;
+}
+.cart-head {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000000ce;
+}
+.cart-txt {
+  font-size: 1.2rem;
+  color: #4b4b4bce;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.btn-category {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+/* STYLING THE SECTION PORPULAR */
+.section-popular {
+  padding-block: 7rem;
+  background-color: #fff;
+}
+.popular-grid {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  align-items: center;
+  grid-gap: 4rem;
+}
+.img img {
+  display: block;
+  object-fit: cover;
+}
+.popular-1 {
+  margin-bottom: 4rem;
+}
+.popular-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.popular-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.popular-text:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.item-det {
+  padding: 1rem;
+}
+
+/* STYLING THE SECTIO  WHY CHOOSE US */
+.section-chooseus {
+  padding-block: 6rem;
+  background-color: #060606;
+}
+.choose-us-head {
+  color: #fff;
+}
+.choose-us {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+}
+.choose-item {
+  border-radius: 3px;
+  padding: 1rem;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+}
+.choose-item ul li:first-child {
+  text-align: center;
+}
+.choose-item ul li:first-child svg {
+  fill: orange;
+}
+.choose-head {
+  font-size: 1.4rem;
+}
+.choose-txt {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* STYLING THE NUMBERS SECTION */
+.section-numbers {
+  background-color: #000;
+  padding-block: 3rem;
+}
+.numbers-sect {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 5rem;
+}
+.item {
+  text-align: center;
+}
+.item p {
+  color: #fff;
+}
+.num-h {
+  display: block;
+  font-size: 3.4rem;
+}
+.num-t {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* STYLING THE SECTION FOOTER */
+.section-footer {
+  padding-top: 5rem;
+  position: relative;
+  background-image: linear-gradient(
+      hsla(0, 0%, 0%, 0.663),
+      hsla(0, 0%, 0%, 0.672)
+    ),
+    url(../Assets/images/livestock.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ft-item p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.footer-ct {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+}
+.footer-heading {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.footer-links li a {
+  color: #bbbbbb;
+  font-size: 1.2rem;
+}
+.footer-contact > *:not(:first-child) {
+  color: #bbbbbb;
+  font-size: 1.2rem;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socials li svg {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 3rem;
+  width: 3rem;
+  fill: #fff;
+}
+/* Styling the copyright text */
+.copyright-text {
+  font-size: 1.2rem;
+  margin-top: 5rem;
+  text-align: center;
+  color: #fff;
+}
+
+/*------------------------------------------------------------ */
+/* -------------  STYLING THE TOURS HTML---------------------- */
+/*------------------------------------------------------------ */
+.hero-t {
+  position: relative;
+  min-height: 40vh;
+  background-color: hsla(0, 0%, 0%, 0.912);
+}
+.hero-det {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-main-heading {
+  color: #fff;
+}
+
+/*------------------------------------------------------------ */
+/* -------------  STYLING THE CONTACT US HTML---------------------- */
+/*------------------------------------------------------------ */
+.contact-hero {
+  background-image: url(../Assets/images/livestock.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-section {
+  padding-block: 5rem;
+}
+.form-heading {
+  font-size: 2rem;
+  display: block;
+}
+.form-txt {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+}
+#contact-form {
+  /* background-color: #000; */
+  width: 80%;
+  max-width: 80rem;
+  margin-inline: auto;
+}
+.form-d {
+  display: flex;
+  justify-content: space-between;
+}
+.form-d input {
+  width: 40%;
+  padding-block: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/*------------------------------------------------------------ */
+/* -------------  STYLING THE CONTACT ABOUT US HTML---------------------- */
+/*------------------------------------------------------------ */
+.section-about {
+  padding-block: 5rem;
+  background-color: #fff;
+}
+.sub-heading {
+  margin-bottom: 1rem;
+}
+.about p {
+  font-size: 1.2rem;
+}
+
+.sub-head-1,
+.sub-head-2,
+.about-sub {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+}
+.about-sub {
+  background-color: hsl(34, 100%, 50%);
+  font-size: 1.4rem;
+}
+.sub {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+.sub-head-1 {
+  background-color: hsl(115, 100%, 52%);
+  font-size: 1.4rem;
+}
+.sub-head-2 {
+  background-color: hsl(50, 100%, 52%);
+  font-size: 1.4rem;
+}
+.sub-text {
+  display: block;
+  font-size: 1.2rem;
+}
+
+/*------------------------------------------------------------ */
+/* -------------  STYLING THE TOURS HTML---------------------- */
+/*------------------------------------------------------------ */
+.tours-bg {
+  background-image: linear-gradient(
+      hsla(0, 0%, 0%, 0.544),
+      hsla(0, 0%, 0%, 0.429)
+    ),
+    url(../Assets/images/Agri\ 000.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-tours {
+  padding-block: 5rem;
+  background-color: hsla(45, 100%, 50%, 0.258);
+}
+.tours-subheading {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.tours {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+}
+.img-t {
+  display: block;
+  height: 15rem;
+  position: relative;
+}
+.img-t img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.tour-name {
+  position: absolute;
+  bottom: 3rem;
+  right: 1rem;
+  text-transform: uppercase;
+  background-color: orange;
+  font-size: 1.6rem;
+  text-align: right;
+}
+.tour {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.tour-detcont {
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.tour-detcont li span:first-child {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/*------------------------------------------------------------ */
+/* -------------  STYLING THE IMAGES HTML---------------------- */
+/*------------------------------------------------------------ */
+.gallery {
+  padding-block: 5rem;
+  background-color: #fff;
+}
+.gallery-images {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1.5rem;
+}
+.img-gall {
+  display: block;
+  height: 15rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0rem 0rem 2rem hsla(51, 100%, 50%, 0.692);
+}
+.gallery-images img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger {
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  fill: #fff;
+}
+
+@media only screen and (min-width: 720px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .hero {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 80rem;
+  }
+  .navigation ul {
+    display: none;
+    /* align-items: center; */
+  }
+  .hamburger {
+    display: block;
+  }
+  .main-heading {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: hsla(0, 0%, 100%, 0.904);
+    margin-bottom: 1.2rem;
+  }
+}
